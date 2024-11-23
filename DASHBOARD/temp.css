@@ -1,0 +1,126 @@
+<style>
+        .dashboard-header {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .dashboard-title {
+            font-family: 'Brygada 1918', serif;
+            color: #232323;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .stats-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            padding: 2rem;
+            height: 100%;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .listing-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .listing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .listing-card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+        .filter-section {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .action-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+        }
+        .badge-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-family: 'Brygada 1918', serif;
+            margin-bottom: 1rem;
+        }
+        .search-input {
+            border-radius: 30px;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .search-input:focus {
+            box-shadow: none;
+            border-color: #1982c4;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1982c4;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        .empty-state {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .empty-state i {
+            font-size: 5rem;
+            color: #dee2e6;
+            margin-bottom: 2rem;
+        }
+        .loading-spinner {
+            padding: 5rem 0;
+        }
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+        }
+        .modal-header {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+        .modal-body {
+            padding: 1.5rem;
+        }
+        .modal-footer {
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+    </style>

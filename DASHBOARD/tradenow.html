@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="images/photo-1500322684104-6a85c598ebbd.jpeg" type="image/x-icon">
+    <title>Trade Now - TradeHub</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/mobirise2.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_1.css">
+    <link rel="stylesheet" href="css/mbr-additional.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Internal Styles -->
+    <style>
+        .dashboard-header {
+            background: linear-gradient(135deg, #ffffff, #f8f9fa);
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .dashboard-title {
+            font-family: 'Brygada 1918', serif;
+            color: #232323;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .stats-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            padding: 2rem;
+            height: 100%;
+        }
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .listing-card {
+            background: #ffffff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .listing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+        .listing-card:hover .card-img-top {
+            transform: scale(1.05);
+        }
+        .filter-section {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .action-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+        }
+        .badge-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .card-title {
+            font-family: 'Brygada 1918', serif;
+            margin-bottom: 1rem;
+        }
+        .search-input {
+            border-radius: 30px;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .search-input:focus {
+            box-shadow: none;
+            border-color: #1982c4;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1982c4;
+            margin-bottom: 0.5rem;
+        }
+        .stat-label {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        .empty-state {
+            padding: 5rem 0;
+            text-align: center;
+        }
+        .empty-state i {
+            font-size: 5rem;
+            color: #dee2e6;
+            margin-bottom: 2rem;
+        }
+        .loading-spinner {
+            padding: 5rem 0;
+        }
+        .modal-content {
+            border-radius: 15px;
+            border: none;
+        }
+        .modal-header {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+        .modal-body {
+            padding: 1.5rem;
+        }
+        .modal-footer {
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section data-bs-version="5.1" class="menu menu2 cid-uuppVrkzqH" once="menu" id="menu-1-uuppVrkzqH">
+        <nav class="navbar navbar-dropdown navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="index.html">
+                            <div class="logo-wrapper">
+                                <img src="images/photo-1500322684104-6a85c598ebbd.jpeg" alt="Logo">
+                            </div>
+                        </a>
+                    </span>
+                    <span class="navbar-caption-wrap">
+                        <a class="navbar-caption text-black display-7" href="index.html">
+                            <strong>TradeHub</strong>
+                        </a>
+                    </span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+                        <li class="nav-item">
+                            <a class="nav-link link text-black display-4" href="mylistings.html">
+                                <i class="fas fa-list-ul me-2"></i>My Listings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link text-black display-4" href="#">
+                                <i class="fas fa-exchange-alt me-2"></i>Buy &amp; Trade
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link link text-black show display-4" data-bs-toggle="modal"
+                                data-bs-target="#listingModal">
+                                <i class="fas fa-plus-circle me-2"></i>Sell Now
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1 class="dashboard-title">Trade Now</h1>
+                    <p class="lead text-muted">Buy your needs here at affordable prices</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <!-- Placeholder for potential actions -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="container mb-5">
+        <!-- Future filter options could be added here -->
+    </section>
+
+    <!-- Listings Section -->
+    <section class="container mb-5">
+        <!-- Loading Spinner -->
+        <div class="loading-spinner text-center d-none" id="loadingSpinner">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Listings Container -->
+        <div class="row g-4" id="listingsContainer">
+            <!-- Listings will be dynamically inserted here by tradenow.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state d-none" id="emptyState">
+            <i class="fas fa-box-open"></i>
+            <h3>No Products Found</h3>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tradenow.js"></script>
+</body>
+</html>
